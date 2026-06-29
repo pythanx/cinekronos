@@ -1,0 +1,40 @@
+name: Deploy Seguro com Chaves Protegidas
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Código
+        uses: actions/checkout@v4
+
+      - name: Injetar as Chaves do Cofre Seguramente
+        run: |
+          chmod +x injeta-chaves.sh
+          ./injeta-chaves.sh
+        env:
+          APIKEY_TMDB: ${{ secrets.APIKEY_TMDB }}
+          APIKEY_OMDB: ${{ secrets.APIKEY_OMDB }}
+
+      - name: Configurar Páginas
+        uses: actions/configure-pages@v4
+
+      - name: Upload dos Arquivos
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
