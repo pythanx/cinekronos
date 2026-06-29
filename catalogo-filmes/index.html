@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Filmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+<!-- SUBSTITUA O CONTEÚDO DO BODY POR ESTE NO HTML: -->
+<body>
+
+    <!-- TÍTULO PRINCIPAL DO SITE -->
+    <header style="max-width: 1400px; margin: 40px auto 20px auto; padding: 0 40px; text-align: left;">
+        <h1 style="color: #ffffff; font-size: 2.8rem; font-weight: 800; letter-spacing: -1.5px; margin: 0;">
+            Cine<span style="color: #3182ce;">Cronos</span>
+        </h1>
+        <p style="color: #718096; font-size: 1rem; margin-top: 6px; font-weight: 400;">Explore suas franquias e mídias favoritas em ordem cronológica</p>
+    </header>
+
+
+    <div class="busca-container">
+        <div class="input-wrapper">
+            <input type="text" id="input-busca" placeholder="Pesquise por filmes, séries ou animes...">
+            <button id="btn-limpar" style="display: none;">&times;</button>
+        </div>
+        <button id="btn-busca">Pesquisar</button>
+    </div>
+
+    <!-- CONTAINER DO SELECT DE ORDENAÇÃO -->
+    <div class="ordenacao-wrapper">
+        <label for="select-ordenacao">Organizar por:</label>
+        <select id="select-ordenacao">
+            <option value="cronologica">Apenas Ordem Cronológica (Ano)</option>
+            <option value="diretor">Diretor e depois por Ano</option>
+            <option value="relevancia">Relevância Padrão da API</option>
+        </select>
+    </div>
+
+    <main></main>
+    <footer class="rodape-container">
+        <p>&copy; 2026 CineCronos. Desenvolvido com orgulho por 
+            <!-- Substitua o link abaixo pela URL real do seu perfil do GitHub -->
+            <a href="https://github.com/pythanx" target="_blank" class="autor-link">Gis</a>.
+        </p>
+        <p class="aviso-api">Dados e mídias fornecidos dinamicamente pelas APIs do TMDB e OMDB.</p>
+    </footer>
+</body>
+
+</html>
