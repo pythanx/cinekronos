@@ -47,7 +47,7 @@ cinekronos/
 ```
 ## Desenvolvido por
 
-[Gis](https://github.com/pythanx) - Criador e desenvolvedor do projeto
+[Gis](https://github.com/pythanx) - Teste
 
 ## Agradecimentos
 
