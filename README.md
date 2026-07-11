@@ -32,16 +32,16 @@ Um catálogo de filmes, séries e animes que organiza tudo em ordem cronológica
 As chaves de API são injetadas automaticamente durante o deploy via GitHub Actions. O código fonte é público, mas as chaves ficam protegidas nos Secrets do GitHub.
 
 ## Estrutura do projeto
-cinekronos/
-├── .github/
-│ └── workflows/
-│ └── deploy.yml # Configuração do deploy automático
-├── index.html # Página principal
-├── script.js # Toda a lógica do site
-├── styles.css # Estilos e animações
-├── favicon.png # Ícone do site
-├── injeta-chaves.sh # Script que injeta as chaves no deploy
-└── README.md # Esse arquivo
+📂 cinekronos/
+├── 📂 .github/
+│   └── 📂 workflows/
+│       └── 📄 deploy.yml          # Configuração do deploy automático
+├── 📄 index.html                  # Página principal
+├── 📄 script.js                   # Toda a lógica do site
+├── 📄 styles.css                  # Estilos e animações
+├── 🖼️ favicon.png                 # Ícone do site
+├── 📄 injeta-chaves.sh            # Script que injeta as chaves no deploy
+└── 📄 README.md                   # Esse arquivo
 
 
 ## Desenvolvido por
