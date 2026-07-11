@@ -1,0 +1,1 @@
+window._env_ = { APIKEY_TMDB: "45832b7c73620abf30f04853dc67f318", APIKEY_OMDB: "54aa102a" };
