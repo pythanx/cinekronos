@@ -47,7 +47,11 @@ cinekronos/
 ```
 ## Desenvolvido por
 
-[Gis](https://github.com/pythanx) - Teste
+<<<<<<<<< Temporary merge branch 1
+[Gis](https://github.com/pythanx)
+=========
+[Gis](https://github.com/pythanx) - Criador e desenvolvedor do projeto
+>>>>>>>>> Temporary merge branch 2
 
 ## Agradecimentos
 
