@@ -16,10 +16,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Código
+      - name: Puxar o código do repositório
         uses: actions/checkout@v4
 
-      - name: Injetar as Chaves do Cofre Seguramente
+      - name: Injetar as chaves de API (vindas dos Secrets do GitHub)
         run: |
           chmod +x injeta-chaves.sh
           ./injeta-chaves.sh
@@ -27,14 +27,14 @@ jobs:
           APIKEY_TMDB: ${{ secrets.APIKEY_TMDB }}
           APIKEY_OMDB: ${{ secrets.APIKEY_OMDB }}
 
-      - name: Configurar Páginas
+      - name: Configurar as Pages do GitHub
         uses: actions/configure-pages@v4
 
-      - name: Upload dos Arquivos
+      - name: Fazer upload dos arquivos do site
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
 
-      - name: Deploy no GitHub Pages
+      - name: Publicar no GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

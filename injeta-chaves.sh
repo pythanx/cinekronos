@@ -1,3 +1,3 @@
 #!/bin/bash
-# Cria um arquivo temporário com as chaves injetadas pelo cofre do GitHub
+# Gera o arquivo env-config.js com as chaves que vem do GitHub Secrets
 echo "window._env_ = { APIKEY_TMDB: '${APIKEY_TMDB}', APIKEY_OMDB: '${APIKEY_OMDB}' };" > env-config.js
