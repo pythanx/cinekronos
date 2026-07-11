@@ -3,7 +3,7 @@
 
 # Arquivos de ambiente
 .env
-env-config.js
+# env-config.js   # <-- COMENTADO! Agora vai pro deploy
 
 # Sistema
 .DS_Store
