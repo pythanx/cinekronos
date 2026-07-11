@@ -1,3 +1,10 @@
-echo ".env" >> .gitignoreenv-config.js
+# Visual Studio
+.vs/
+
+# Arquivos de ambiente
+.env
 env-config.js
-env-config.js
+
+# Sistema
+.DS_Store
+Thumbs.db
