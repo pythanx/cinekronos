@@ -1,1 +1,2 @@
 echo ".env" >> .gitignoreenv-config.js
+env-config.js
